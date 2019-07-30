@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 httpClient.addInterceptor(new Interceptor() {
                     @Override
                     public Response intercept(Chain chain) throws IOException {
-                        Request request = chain.request().newBuilder().addHeader("X-RapidAPI-Key", "3a2a774adbmshcd3a4063f5cdefbp153725jsn8ce109a2ed5c").build();
+                        Request request = chain.request().newBuilder().addHeader("X-RapidAPI-Key", "YOUR_API_KEY").build();
                         return chain.proceed(request);
                     }
                 });
