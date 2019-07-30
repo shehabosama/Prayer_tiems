@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mosq">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:gravity="center_vertical|center_horizontal">
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center_horizontal|center_vertical"
+
+        >
+
+    <Button
+
+        android:background="@drawable/background_btn"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="اوقات الصلاه"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/btn_display_prayer_time"
+        />
+        <ToggleButton
+
+            android:background="@drawable/background_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textOff="مسبحه"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp"
+            android:id="@+id/tspe7"
+            />
+        <Button
+
+            android:background="@drawable/background_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="80dp"
+            android:id="@+id/no"
+            />
+
+    </LinearLayout>
+
+        <Button
+
+            android:visibility="invisible"
+            android:background="@drawable/background_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="تسبيح"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tspe72"
+            />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/words"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
